@@ -1,0 +1,5 @@
+name: land1-evn
+packages:
+  - path: routes
+language: javascript
+appmap_dir: tmp/appmap
