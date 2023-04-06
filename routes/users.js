@@ -2,7 +2,11 @@ const express = require("express")
 const router = express.Router()
 router.use(logger)
 router.get("/", (req, res) => {
-    res.send("User list")
+    res.render("users/new")
+})
+router.post("/", (req, res) => {
+    console.log(req.body.firstName);
+    res.send("hi")
 })
 router.get("/new", (req, res) => {
     res.send("User New form")
